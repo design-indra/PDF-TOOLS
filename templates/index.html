@@ -1,1 +1,285 @@
-tes
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Tools - Merge, Split, Compress, Rotate PDF Gratis</title>
+    <meta name="description" content="PDF Tools gratis online. Gabungkan, pisahkan, kompres, rotate PDF, dan konversi gambar ke PDF. Tanpa login, langsung download!">
+    <meta name="keywords" content="merge pdf, split pdf, compress pdf, rotate pdf, img to pdf, pdf tools gratis, gabung pdf, pisah pdf, kompres pdf">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://PDFTOOLS-URL.vercel.app">
+    <meta property="og:title" content="PDF Tools - Merge, Split, Compress PDF Gratis">
+    <meta property="og:description" content="Tools PDF lengkap gratis. Merge, split, compress, rotate, dan konversi gambar ke PDF.">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; }
+        .hero-section { background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); padding: 50px 20px; text-align: center; color: white; }
+        .tool-card { border: 2px solid #fecaca; background: white; border-radius: 20px; padding: 20px; cursor: pointer; transition: 0.2s; }
+        .tool-card:hover, .tool-card.active { border-color: #dc2626; background: #fef2f2; }
+        .tool-card.active .tool-icon { color: #dc2626; }
+        .upload-area { border: 3px dashed #fecaca; background: #fef2f2; border-radius: 20px; padding: 40px 20px; text-align: center; cursor: pointer; transition: 0.3s; }
+        .upload-area:hover { border-color: #dc2626; }
+        .btn-main { background: linear-gradient(135deg, #dc2626, #b91c1c); color: white; font-weight: 800; padding: 14px 40px; border-radius: 14px; border: none; cursor: pointer; transition: 0.3s; font-size: 16px; width: 100%; }
+        .btn-main:hover { opacity: 0.9; transform: scale(1.01); }
+        .input-field { width: 100%; padding: 12px 16px; background: #f8fafc; border: 2px solid #e2e8f0; border-radius: 12px; outline: none; font-size: 15px; transition: 0.2s; }
+        .input-field:focus { border-color: #dc2626; }
+    </style>
+    <script src="https://pl28767228.effectivegatecpm.com/e8/37/9b/e8379ba18a27a4d7dd8dd4fcb76b4e28.js"></script>
+    <script src="https://pl28767221.effectivegatecpm.com/17/17/73/171773e792fe01430a8ce9e931bc46d9.js"></script>
+</head>
+<body>
+
+    <nav class="py-4 px-6 bg-white border-b flex justify-between items-center sticky top-0 z-40 shadow-sm">
+        <div class="text-2xl font-black text-red-600">PDFTools</div>
+        <span class="text-xs font-bold text-gray-400 uppercase tracking-widest hidden sm:inline">PDF Tools Gratis</span>
+        <div class="relative">
+            <button onclick="toggleMenu()" class="p-2 rounded-lg hover:bg-gray-100 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-52 bg-white rounded-2xl shadow-xl border border-gray-100 z-50 overflow-hidden">
+                <div class="px-4 py-2 text-[10px] text-gray-400 uppercase tracking-widest font-bold border-b">Tools Kami</div>
+                <a href="https://YTSAVE-URL.vercel.app" class="flex items-center gap-3 px-4 py-3 hover:bg-red-50 font-bold text-sm text-red-600 transition"><i class="fa-brands fa-youtube"></i> YTSave</a>
+                <a href="https://SNAPSAVE-URL.vercel.app" class="flex items-center gap-3 px-4 py-3 hover:bg-indigo-50 font-bold text-sm text-indigo-600 transition"><i class="fa-brands fa-tiktok"></i> SnapSave</a>
+                <a href="https://INSTASAVE-URL.vercel.app" class="flex items-center gap-3 px-4 py-3 hover:bg-pink-50 font-bold text-sm text-pink-600 transition"><i class="fa-brands fa-instagram"></i> InstaSave</a>
+                <a href="https://QRSAVE-URL.vercel.app" class="flex items-center gap-3 px-4 py-3 hover:bg-violet-50 font-bold text-sm text-violet-600 transition"><i class="fa-solid fa-qrcode"></i> QRSave</a>
+                <a href="https://REMOVEBG-URL.vercel.app" class="flex items-center gap-3 px-4 py-3 hover:bg-emerald-50 font-bold text-sm text-emerald-600 transition"><i class="fa-solid fa-scissors"></i> RemoveBG</a>
+                <a href="https://TTS-URL.vercel.app" class="flex items-center gap-3 px-4 py-3 hover:bg-sky-50 font-bold text-sm text-sky-600 transition"><i class="fa-solid fa-volume-high"></i> TextToSpeech</a>
+                <a href="https://PDFTOOLS-URL.vercel.app" class="flex items-center gap-3 px-4 py-3 hover:bg-red-50 font-bold text-sm text-red-600 transition"><i class="fa-solid fa-file-pdf"></i> PDFTools</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex justify-center py-2 bg-gray-50 border-b overflow-x-hidden">
+        <script>atOptions = {'key':'ce4de3b239db7200d9d69752a34d94ed','format':'iframe','height':90,'width':728,'params':{}};</script>
+        <script src="https://www.highperformanceformat.com/ce4de3b239db7200d9d69752a34d94ed/invoke.js"></script>
+    </div>
+
+    <section class="hero-section">
+        <h1 class="text-3xl md:text-5xl font-extrabold mb-3 tracking-tight">PDF Tools</h1>
+        <p class="text-red-100 text-lg">Merge, Split, Compress, Rotate & Gambar ke PDF — Gratis!</p>
+    </section>
+
+    <div class="max-w-2xl mx-auto px-4 py-10">
+
+        <!-- Tool Selector -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-8">
+            <div class="tool-card active text-center" onclick="selectTool('merge', this)" id="card-merge">
+                <i class="fa-solid fa-object-group text-2xl tool-icon text-red-600 mb-2 block"></i>
+                <p class="font-bold text-sm">Merge PDF</p>
+            </div>
+            <div class="tool-card text-center" onclick="selectTool('split', this)" id="card-split">
+                <i class="fa-solid fa-scissors text-2xl tool-icon text-gray-400 mb-2 block"></i>
+                <p class="font-bold text-sm">Split PDF</p>
+            </div>
+            <div class="tool-card text-center" onclick="selectTool('compress', this)" id="card-compress">
+                <i class="fa-solid fa-compress text-2xl tool-icon text-gray-400 mb-2 block"></i>
+                <p class="font-bold text-sm">Compress</p>
+            </div>
+            <div class="tool-card text-center" onclick="selectTool('rotate', this)" id="card-rotate">
+                <i class="fa-solid fa-rotate text-2xl tool-icon text-gray-400 mb-2 block"></i>
+                <p class="font-bold text-sm">Rotate</p>
+            </div>
+            <div class="tool-card text-center" onclick="selectTool('img2pdf', this)" id="card-img2pdf">
+                <i class="fa-solid fa-image text-2xl tool-icon text-gray-400 mb-2 block"></i>
+                <p class="font-bold text-sm">Img to PDF</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-[2rem] shadow-xl p-8 border border-red-50">
+
+            <!-- MERGE -->
+            <form method="POST" action="/" enctype="multipart/form-data" id="form-merge" class="tool-form">
+                <input type="hidden" name="tool" value="merge">
+                <h3 class="font-black text-xl text-gray-800 mb-2">Gabungkan PDF</h3>
+                <p class="text-sm text-gray-400 mb-5">Upload beberapa PDF, semua akan digabungkan menjadi satu file.</p>
+                <div class="upload-area mb-5" onclick="document.getElementById('merge-input').click()">
+                    <i class="fa-solid fa-file-pdf text-4xl text-red-400 mb-3 block"></i>
+                    <p class="font-bold text-gray-700">Klik untuk upload PDF</p>
+                    <p class="text-sm text-gray-400">Pilih multiple file sekaligus</p>
+                    <p id="merge-names" class="mt-2 text-red-600 font-bold text-sm"></p>
+                </div>
+                <input type="file" id="merge-input" name="pdfs" accept=".pdf" multiple class="hidden" onchange="showFiles(this, 'merge-names')">
+                <button type="submit" class="btn-main flex items-center justify-center gap-2"><i class="fa-solid fa-object-group"></i> GABUNGKAN PDF</button>
+            </form>
+
+            <!-- SPLIT -->
+            <form method="POST" action="/" enctype="multipart/form-data" id="form-split" class="tool-form hidden">
+                <input type="hidden" name="tool" value="split">
+                <h3 class="font-black text-xl text-gray-800 mb-2">Pisahkan PDF</h3>
+                <p class="text-sm text-gray-400 mb-5">Pilih halaman yang ingin diambil dari PDF. Kosongkan untuk semua halaman.</p>
+                <div class="upload-area mb-5" onclick="document.getElementById('split-input').click()">
+                    <i class="fa-solid fa-file-pdf text-4xl text-red-400 mb-3 block"></i>
+                    <p class="font-bold text-gray-700">Klik untuk upload PDF</p>
+                    <p id="split-names" class="mt-2 text-red-600 font-bold text-sm"></p>
+                </div>
+                <input type="file" id="split-input" name="pdf" accept=".pdf" class="hidden" onchange="showFiles(this, 'split-names')">
+                <div class="mb-5">
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Halaman (opsional)</label>
+                    <input type="text" name="pages" class="input-field" placeholder="Contoh: 1,3,5-7 (kosongkan = semua halaman)">
+                </div>
+                <button type="submit" class="btn-main flex items-center justify-center gap-2"><i class="fa-solid fa-scissors"></i> PISAHKAN PDF</button>
+            </form>
+
+            <!-- COMPRESS -->
+            <form method="POST" action="/" enctype="multipart/form-data" id="form-compress" class="tool-form hidden">
+                <input type="hidden" name="tool" value="compress">
+                <h3 class="font-black text-xl text-gray-800 mb-2">Kompres PDF</h3>
+                <p class="text-sm text-gray-400 mb-5">Kurangi ukuran file PDF tanpa mengurangi kualitas secara signifikan.</p>
+                <div class="upload-area mb-5" onclick="document.getElementById('compress-input').click()">
+                    <i class="fa-solid fa-file-pdf text-4xl text-red-400 mb-3 block"></i>
+                    <p class="font-bold text-gray-700">Klik untuk upload PDF</p>
+                    <p id="compress-names" class="mt-2 text-red-600 font-bold text-sm"></p>
+                </div>
+                <input type="file" id="compress-input" name="pdf" accept=".pdf" class="hidden" onchange="showFiles(this, 'compress-names')">
+                <button type="submit" class="btn-main flex items-center justify-center gap-2"><i class="fa-solid fa-compress"></i> KOMPRES PDF</button>
+            </form>
+
+            <!-- ROTATE -->
+            <form method="POST" action="/" enctype="multipart/form-data" id="form-rotate" class="tool-form hidden">
+                <input type="hidden" name="tool" value="rotate">
+                <h3 class="font-black text-xl text-gray-800 mb-2">Putar PDF</h3>
+                <p class="text-sm text-gray-400 mb-5">Putar semua halaman PDF ke arah yang kamu inginkan.</p>
+                <div class="upload-area mb-5" onclick="document.getElementById('rotate-input').click()">
+                    <i class="fa-solid fa-file-pdf text-4xl text-red-400 mb-3 block"></i>
+                    <p class="font-bold text-gray-700">Klik untuk upload PDF</p>
+                    <p id="rotate-names" class="mt-2 text-red-600 font-bold text-sm"></p>
+                </div>
+                <input type="file" id="rotate-input" name="pdf" accept=".pdf" class="hidden" onchange="showFiles(this, 'rotate-names')">
+                <div class="mb-5">
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Arah Rotasi</label>
+                    <select name="angle" class="input-field">
+                        <option value="90">90° Kanan</option>
+                        <option value="180">180° Terbalik</option>
+                        <option value="270">90° Kiri</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-main flex items-center justify-center gap-2"><i class="fa-solid fa-rotate"></i> PUTAR PDF</button>
+            </form>
+
+            <!-- IMG TO PDF -->
+            <form method="POST" action="/" enctype="multipart/form-data" id="form-img2pdf" class="tool-form hidden">
+                <input type="hidden" name="tool" value="img2pdf">
+                <h3 class="font-black text-xl text-gray-800 mb-2">Gambar ke PDF</h3>
+                <p class="text-sm text-gray-400 mb-5">Konversi satu atau beberapa gambar menjadi file PDF.</p>
+                <div class="upload-area mb-5" onclick="document.getElementById('img-input').click()">
+                    <i class="fa-solid fa-images text-4xl text-red-400 mb-3 block"></i>
+                    <p class="font-bold text-gray-700">Klik untuk upload gambar</p>
+                    <p class="text-sm text-gray-400">JPG, PNG, WEBP</p>
+                    <p id="img-names" class="mt-2 text-red-600 font-bold text-sm"></p>
+                </div>
+                <input type="file" id="img-input" name="images" accept=".jpg,.jpeg,.png,.webp" multiple class="hidden" onchange="showFiles(this, 'img-names')">
+                <button type="submit" class="btn-main flex items-center justify-center gap-2"><i class="fa-solid fa-file-pdf"></i> KONVERSI KE PDF</button>
+            </form>
+
+            {% if error %}
+            <div class="mt-6 bg-red-50 border border-red-200 text-red-700 px-5 py-4 rounded-2xl flex items-center gap-3">
+                <i class="fa-solid fa-circle-exclamation text-xl"></i>
+                <p class="font-bold">{{ error }}</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Article -->
+    <article class="max-w-4xl mx-auto px-6 py-16">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-black text-gray-900 mb-4">Apa itu PDFTools?</h2>
+            <p class="text-gray-600 leading-relaxed max-w-2xl mx-auto">PDFTools adalah kumpulan tools PDF gratis yang bisa digunakan langsung dari browser. Merge, split, compress, rotate PDF, dan konversi gambar ke PDF tanpa perlu install aplikasi.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 mb-20">
+            <div>
+                <h2 class="text-3xl font-black text-gray-900 mb-6">5 Tools dalam 1 Website</h2>
+                <ul class="space-y-4">
+                    <li class="flex gap-4"><span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">1</span><p class="text-gray-600"><strong>Merge PDF:</strong> Gabungkan beberapa file PDF menjadi satu file yang rapi.</p></li>
+                    <li class="flex gap-4"><span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">2</span><p class="text-gray-600"><strong>Split PDF:</strong> Ambil halaman tertentu dari PDF menjadi file baru.</p></li>
+                    <li class="flex gap-4"><span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">3</span><p class="text-gray-600"><strong>Compress PDF:</strong> Kurangi ukuran file PDF agar mudah dikirim via WhatsApp atau email.</p></li>
+                    <li class="flex gap-4"><span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">4</span><p class="text-gray-600"><strong>Rotate PDF:</strong> Putar halaman PDF yang terbalik atau miring.</p></li>
+                    <li class="flex gap-4"><span class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">5</span><p class="text-gray-600"><strong>Img to PDF:</strong> Konversi foto/gambar menjadi file PDF.</p></li>
+                </ul>
+            </div>
+            <div class="bg-red-50 p-8 rounded-[2rem] border border-red-100">
+                <h4 class="font-black text-red-900 text-xl mb-4">Fitur Utama:</h4>
+                <ul class="space-y-3 text-gray-700">
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 5 tools PDF dalam 1 halaman</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Tidak perlu install aplikasi</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> File tidak disimpan di server</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Gratis tanpa batas</li>
+                    <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Tidak perlu login/daftar</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t pt-16">
+            <h2 class="text-center text-3xl font-black text-gray-900 mb-12">Mengapa Memilih Kami?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6"><div class="text-red-600 text-4xl mb-4"><i class="fa-solid fa-shield-halved"></i></div><h5 class="font-bold text-lg mb-2">Aman & Privat</h5><p class="text-sm text-gray-500">File PDF kamu tidak disimpan di server setelah proses selesai.</p></div>
+                <div class="text-center p-6"><div class="text-red-600 text-4xl mb-4"><i class="fa-solid fa-toolbox"></i></div><h5 class="font-bold text-lg mb-2">5 Tools Sekaligus</h5><p class="text-sm text-gray-500">Semua kebutuhan PDF tersedia dalam satu website yang mudah digunakan.</p></div>
+                <div class="text-center p-6"><div class="text-red-600 text-4xl mb-4"><i class="fa-solid fa-bolt-lightning"></i></div><h5 class="font-bold text-lg mb-2">Cepat & Gratis</h5><p class="text-sm text-gray-500">Proses PDF dalam hitungan detik, sepenuhnya gratis tanpa biaya apapun.</p></div>
+            </div>
+        </div>
+    </article>
+
+    <div class="max-w-4xl mx-auto px-6 pb-10">
+        <script async="async" data-cfasync="false" src="https://pl28767224.effectivegatecpm.com/84baf2967a1046cd5dc730690ab9f7c8/invoke.js"></script>
+        <div id="container-84baf2967a1046cd5dc730690ab9f7c8"></div>
+    </div>
+
+    <footer class="bg-gray-900 py-12 text-center text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-2xl font-black mb-4">PDFTools</div>
+            <p class="text-gray-400 text-sm mb-6 uppercase tracking-widest">Merge, Split, Compress PDF Gratis</p>
+            <div class="flex justify-center gap-8 border-t border-gray-800 pt-8">
+                <a href="/privacy" class="text-xs font-bold hover:text-red-400 uppercase text-gray-400">Privacy Policy</a>
+                <a href="/contact" class="text-xs font-bold hover:text-red-400 uppercase text-gray-400">Contact</a>
+            </div>
+            <p class="text-gray-600 text-xs mt-4">© 2026 PDFTools All right reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentTool = '{{ tool }}';
+
+        function selectTool(tool, el) {
+            document.querySelectorAll('.tool-form').forEach(f => f.classList.add('hidden'));
+            document.querySelectorAll('.tool-card').forEach(c => {
+                c.classList.remove('active');
+                c.querySelector('.tool-icon').classList.remove('text-red-600');
+                c.querySelector('.tool-icon').classList.add('text-gray-400');
+            });
+            document.getElementById('form-' + tool).classList.remove('hidden');
+            el.classList.add('active');
+            el.querySelector('.tool-icon').classList.add('text-red-600');
+            el.querySelector('.tool-icon').classList.remove('text-gray-400');
+            currentTool = tool;
+        }
+
+        function showFiles(input, targetId) {
+            const el = document.getElementById(targetId);
+            if (input.files.length > 0) {
+                const names = Array.from(input.files).map(f => f.name).join(', ');
+                el.textContent = '✅ ' + names;
+            }
+        }
+
+        function toggleMenu() {
+            document.getElementById('dropdown-menu').classList.toggle('hidden');
+        }
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.relative')) {
+                document.getElementById('dropdown-menu').classList.add('hidden');
+            }
+        });
+
+        // Restore active tool on page load
+        window.onload = function() {
+            const tool = '{{ tool }}';
+            const card = document.getElementById('card-' + tool);
+            if (card) selectTool(tool, card);
+        };
+    </script>
+</body>
+</html>
